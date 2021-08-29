@@ -21,11 +21,12 @@ class Survey extends Controller
 
     public function view($id){
         $survey = SurveyApi::view($id);
+        //echo "<pre>";print_r($survey);exit;
         if(empty($survey)){
             abort(404);
         }
         $data = array(
-            "survey"=>SurveyApi::view($id)
+            "survey"=>$survey
         );
 
         return $this->loadTemplate('survey_view', $data);

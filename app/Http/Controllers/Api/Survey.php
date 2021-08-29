@@ -46,7 +46,9 @@ class Survey extends Controller
 
     private function getFileContents(){
         try {
-            $list = file_get_contents('surveys_data/list.json');
+            //$list = file_get_contents('surveys_data/list.json');
+            $list = file_get_contents(resource_path('views/surveys_data/list.json'));
+
             if(!empty($list)){
                return json_decode($list, true);
             }

@@ -10,7 +10,7 @@
     </thead>
     @if(isset($surveys_list) && !empty($surveys_list))
     <tbody>
-        @foreach($surveys_list as $surv)
+        @foreach($surveys_list as $surv_code => $surv)
         <tr>
             <td>{{ $surv["info"]["code"] }}</td>
             <td>{{ $surv["info"]["name"] }}</td>
@@ -23,7 +23,7 @@
                 </ol>
             </td>
             <td>
-                <a class="btn btn-primary" href="#">View</a>
+                <a class="btn btn-primary" href="{{ url("survey/view/".$surv_code) }}">View</a>
             </td>
         </tr>
         @endforeach

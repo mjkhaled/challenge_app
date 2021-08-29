@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\Session;
 class Survey extends Controller
 {
     public function index(){
+        $list = file_get_contents('surveys_data/list.json');
+        var_dump($list);exit;
         $list = SurveyApi::list();
         $data = array(
             "table_view"=>view("surveys_table", ["surveys_list"=>$list])

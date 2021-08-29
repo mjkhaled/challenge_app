@@ -34,7 +34,7 @@ class Survey extends Controller
                 foreach($l["questions"] as $ques){
                     //$structured_list [$code]["questions"][$ques['label']][] = $ques;
                     if(!isset($structured_list [$code]["questions"][$ques['label']])){
-                        $structured_list [$code]["questions"][$ques['label']] = array("type"=>"qcm", "label"=>$ques['label']);
+                        $structured_list [$code]["questions"][$ques['label']] = array("type"=>$ques['type'], "label"=>$ques['label']);
                     }
                     $structured_list [$code]["questions"][$ques['label']]["opt_ans"][] = $ques;
                 }

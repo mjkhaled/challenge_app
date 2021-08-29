@@ -1,5 +1,6 @@
 <div class="container-fluid">
     <div class="card m-5">
+        <a class="btn btn-info" style="width:130px; margin:20px" href="{{ url("/") }}">All Surveys</a>
         <div class="card-body">
             <h1>Survey Name: {{ $survey["info"]["name"] }}</h1>
             <h2>Survey Code: {{ $survey["info"]["code"] }}</h2>

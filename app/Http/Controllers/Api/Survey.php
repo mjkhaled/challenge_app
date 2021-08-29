@@ -55,4 +55,16 @@ class Survey extends Controller
             return  [];
         }
     }
+
+    public function view($id){
+        $list = $this->list();
+        try{
+            if(!empty($list) && isset($list[$id])){
+                return $list[$id];
+            }
+            return [];
+        }catch (\Exception $e){
+            return [];
+        }
+    }
 }

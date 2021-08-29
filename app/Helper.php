@@ -25,4 +25,23 @@ class Helper{
         return $ip;
     }
 
+    public static function getSurveyQuesResult($ques_type, $option_answers){
+        $numeric_result = 0;
+        $qcm_result = [];
+        foreach($option_answers as $opt_ans){
+            if($ques_type == "qcm"){
+                foreach($opt_ans["options"] as $opt_key => $opt_val){
+                    if(!isset($qcm_result [$opt_val])){
+                        $qcm_result [$opt_val] = $opt_ans["answer"][$opt_key];
+                    }else{
+                        $qcm_result [$opt_val] += $opt_ans["answer"][$opt_key];
+                    }
+                }
+            }else if($ques_type == "numeric"){
+                $numeric_result += $opt_ans["answer"];
+            }
+        }
+        return array("qcm"=>$qcm_result, "numeric"=>$numeric_result);
+    }
+
 }

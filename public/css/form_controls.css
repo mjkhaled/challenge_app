@@ -1,0 +1,70 @@
+﻿.required, .input-control.has-error input, .input-control.has-error .custom-dd-list, .custom-dd-list.has-error{border:1px solid #e60000 !important}
+.input-control.has-error label, .input-control.has-error span.field-error-message, .select-control.has-error span.field-error-message, .section-title span.field-error-message{color:#e60000 !important}
+.input-control.has-error span.field-error-message, .section-title span.field-error-message{font-size:10px; display: block; margin-top:3px}
+
+#form-response-message{font-size:13px; display: block; color:#e60000; margin:10px 0}
+#form-response-message.success{color:#336600}
+#form-response-message.pending{color:#cf7030}
+
+form.custom-form-control{font-size:0; display: block}
+form.custom-form-control:after{content:''; display: block; clear:both}
+form.custom-form-control p.input-label{font-size:14px; font-weight: 400; color:#867d7d; display: block; margin-bottom:5px}
+form.custom-form-control label{font-size:14px}
+form.custom-form-control .text-editor-input-control{display: block; width:100%; margin-bottom:30px}
+form.custom-form-control .input-control{display: inline-block; width:48%; vertical-align: top; margin-bottom:30px; position: relative}
+form.custom-form-control .input-control:after{content:'';clear: both; display: block}
+form.custom-form-control .input-control:nth-child(odd){margin-right:2%}
+form.custom-form-control .input-control:nth-child(even){margin-left:2%}
+form.custom-form-control .input-control[data-control=price]{overflow: hidden}
+form.custom-form-control .input-control[data-control=price]:before{content:'£'; font-size:16px; position: absolute; left:-10px; top:21px; color:#222A35; transition: 0.2s all; -webkit-transition: 0.2s all}
+form.custom-form-control .input-control[data-control=price].active:before{left:10px}
+form.custom-form-control .input-control.full-width{width:100%; margin:0 0 15px 0}
+form.custom-form-control .input-control.sm-width{width:20%; display: block; margin:0 0 15px 0}
+form.custom-form-control .input-control.col-rt{margin:0 0 15px 2%}
+form.custom-form-control .input-control.col-lt{margin:0 2% 15px 0}
+form.custom-form-control .input-control label{font-size:14px; color:#867d7d; display: block; margin-bottom:5px; position: absolute; top: 13px; left: 15px;  z-index: 1; cursor: auto; transition: 0.2s all}
+form.custom-form-control .input-control.active label{font-size:12px !important; left:10px; top:5px}
+form.custom-form-control .input-control label.force-active{font-size:12px !important; left:10px !important; top:5px !important}
+form.custom-form-control .input-control input, form.custom-form-control .input-control select,  form.custom-form-control .input-control textarea, form.custom-form-control .text-editor-input-control textarea, form .input-control.file-control .file-box{font-size:15px; font-family: 'Montserrat', sans-serif; width:100%; height:50px; color:#222A35; padding:12px 10px 0; display: block; border:1px solid #d9d9d9; border-radius: 5px; -webkit-border-radius: 5px; -webkit-appearance:none !important; -moz-appearance:none !important}
+form.custom-form-control .input-control[data-control=price] input{padding:12px 10px 0 20px}
+form.custom-form-control .input-control input[type=file]{height:58px; padding:24px 10px 0}
+form.custom-form-control .input-control select{padding:12px 10px 0 5px; background:none !important; -webkit-appearance:none !important; -moz-appearance:none !important;}
+form.custom-form-control .input-control textarea{height:150px !important; width: 100% !important; padding:22px 10px 5px 10px; resize: none}
+form.custom-form-control .text-editor-input-control textarea{height:150px !important; width: 100% !important}
+form.custom-form-control .input-control input:focus,  form.custom-form-control .input-control textarea:focus{border-color:#222A35; border-width: 1px}
+form.custom-form-control .input-control input[name='security_code']{padding-right:40px}
+form.custom-form-control .input-control input[type='radio']{visibility: hidden !important; display: none !important}
+form.custom-form-control .input-control .select-box:after{content: '\f105'; font-family: 'Font Awesome', 'Font Awesome 5 Free'; font-weight: 700; font-size: 16px; right: 10px; top: 16px; color:#222A35; position: absolute; pointer-events: none; transform:rotate(90deg)}
+form.custom-form-control .input-control.country{width:58%}
+form.custom-form-control .input-control.post-code{width:38%}
+form.custom-form-control input:disabled, form.custom-form-control select:disabled, form.custom-form-control textarea:disabled{color:#a19f9d; background-color:#f3f2f1 !important;}
+form.custom-form-control .input-control .select-box.disabled:after{color:#a19f9d}
+
+form.custom-form-control ul.box-list:after{content:''; display: block; clear: both}
+form.custom-form-control ul.box-list li{width:48%; margin-bottom:20px; display: block; float:left; border:1px solid #d9d9d9; border-radius: 5px; -webkit-border-radius: 5px ;transition:0.2s all; -webkit-transition:0.2s all}
+form.custom-form-control ul.box-list li:nth-child(odd){margin-right:2%}
+form.custom-form-control ul.box-list li:nth-child(even){margin-left:2%}
+form.custom-form-control ul.box-list li a{font-size:15px; color:#222A35; display: block; padding:15px 10px; text-align: center}
+/*form.custom-form-control ul.box-list li.active{-webkit-animation: btnClicked 0.13s linear; animation: btnClicked 0.13s linear}*/
+form.custom-form-control ul.box-list li.active, form.custom-form-control ul.box-list li:hover{background-color:#ed6631e0}
+form.custom-form-control ul.box-list li.active a, form.custom-form-control ul.box-list li:hover a{color:white}
+form.custom-form-control ul.box-list li:active{transform: translateY(4px)}
+
+form.custom-form-control .uploader-box{width:100%; height:60px; display: block; border:2px dashed #d9d9d9}
+
+form .phone-country-code{width:40px; height:50px; display: flex; align-items: center; -webkit-align-items: center; justify-content: space-around; -webkit-justify-content: space-around; position: absolute; top:0; bottom:0; left:0; border-right:1px solid #d9d9d9}
+form .phone-country-code span{font-size:14px; color:#323e5c; text-align: center; display: block; margin:0; transition: .2s}
+form .phone-country-code select{border:none !important; padding:14px 2px 0 !important; transition: .2s}
+form .phone-number.active span, form .phone-country-code.active span{margin:11px 0 0}
+form .phone-number.active select, form .phone-country-code.active select{padding-top:12px}
+
+form .input-control.phone-number label, form .input-control.phone-number.active label, form .input-control.phone-number label.force-active{left:45px !important;}
+form .input-control.phone-number input{padding-left:45px}
+
+form .annual-revenue{overflow: hidden}
+form .annual-revenue.active span.currency-symbol-code{left:10px}
+form .annual-revenue input{padding-left:23px}
+
+.action-list-wrapper{width:100%; display: block; padding:0 2%; text-align:right}
+.action-list-wrapper a{display: inline-block !important}
+.action-list-wrapper a:first-child{margin-right:20px}

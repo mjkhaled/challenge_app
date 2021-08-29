@@ -1,0 +1,106 @@
+﻿* {margin: 0; padding: 0;box-sizing: border-box;outline:none}
+a{text-decoration: none; color:inherit}
+ul{list-style: none}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+body.no-scroll{overflow: hidden}
+.clear{clear: both}
+.hidden{display: none !important}
+body{font-family: Montserrat, 'Helvetica', 'Arial', sans-serif}
+html, body{height:100%}
+.bold{font-weight: bold}
+.mrg-btm-20{margin-bottom:20px}
+.spinner{border: 2px solid #d9d9d9; border-radius: 50%; border-top: 2px solid #e84b3d; border-right: 2px solid #e84b3d; width: 25px; height: 25px; margin:auto; -webkit-animation: spin 1s linear infinite; animation: spin 1s linear infinite}
+a[disabled]{pointer-events: none !important;}
+h2.head-title{font-size:21px; color:#222A35; display: block; margin-bottom:10px}
+h3.section-title{font-size: 19px; color: #222A35; display: block; margin-bottom:15px}
+h4.sub-title{font-size:14px; font-weight: bold; color:#2c2e2f; margin-bottom:15px}
+
+a.custom-sbt-btn{font-size:15px; width:150px; color:white; background-color:#e84b3d; padding:10px 0; margin:20px auto; text-align: center; display: block; border:1px solid #e84b3d; cursor:pointer; box-shadow: 0 2px 8px #b3b3b3; -webkit-box-shadow: 0 2px 8px #b3b3b3; border-radius: 5px; -webkit-border-radius: 5px; transition: 0.4s all; -webkit-transition: 0.4s all}
+a.custom-sbt-btn.clicked{color:white !important; background-color:#e84b3d !important; cursor:initial}
+a.custom-sbt-btn.clicked i.fa{position: relative; left:10px}
+a.custom-sbt-btn[data-step='3']{width:180px}
+a.custom-sbt-btn[data-submit]{float:right}
+a.custom-sbt-btn[data-submit]:after{content:''; clear: both; display: block}
+.required, .input-control.has-error input{border:1px solid #e60000 !important}
+.input-control.has-error label, .input-control.has-error span.field-error-message, .select-control.has-error span.field-error-message, .section-title span.field-error-message{color:#e60000 !important}
+.input-control.has-error span.field-error-message, .section-title span.field-error-message{font-size:13px; display: block; margin-top:3px}
+input.error{border-color:#e60000 !important}
+
+.form-card #form-response-message{font-size:12px}
+form#mfa-form #form-response-message{text-align: center}
+.card-content{display:table-cell; padding:50px 0 0; vertical-align:middle}
+.card-container{display: table; height: 100%; margin:0 auto}
+.card-container .form-card a.frm-sbt-btn{height:39px; position: relative;}
+.card-container .form-card a.frm-sbt-btn.disabled span{display: none}
+.card-container .form-card a.frm-sbt-btn.disabled .spinner{position: absolute; top:0; bottom:0; left:0; right: 0; margin:auto; display: block}
+.card-container .form-card button.submit-btn.disabled, .card-container .form-card a.frm-sbt-btn.disabled{pointer-events: none; background-color:#f3f2f1 !important; color:#a19f9d !important; border-color:#f3f2f1 !important; box-shadow: none;}
+.card-container .form-card{width:450px; min-height:200px; display: block; margin:0 auto 18px; background-color:white; padding:40px 0; border-radius: 15px; -webkit-border-radius: 15px; box-shadow: 0 3px 8px #e6e6e6; -webkit-box-shadow: 0 3px 8px #e6e6e6; position: relative}
+.card-container .form-card .inner-block{width:calc(100% - 80px); margin:auto}
+.card-container .form-card a.logo{display: table; margin: 0 auto 10px}
+.card-container .form-card h1.main-title{font-size:22px; color:#222A35; margin-bottom:20px; text-align: center; display: block}
+.card-container .form-card p.description{font-size:13px; color:#222A35; margin-bottom:20px}
+.card-container .form-card form{border-bottom:2px solid #e84b3d}
+.card-container .form-card form label.force-active{font-size:13px !important;}
+.card-container .form-card form input{height:46px !important;}
+.card-container .form-card form input:disabled{background:none}
+.card-container .form-card a.submit{font-size:15px; width:150px; color:white; background-color:#e84b3d; padding:10px 0; margin:3px auto 18px; float:right; text-align: center; display: block; border:1px solid #e84b3d; cursor:pointer; box-shadow: 0 2px 8px #b3b3b3; -webkit-box-shadow: 0 2px 8px #b3b3b3; border-radius: 5px; -webkit-border-radius: 5px; transition: 0.4s all; -webkit-transition: 0.4s all}
+.card-container .form-card a.submit i.fa{margin-left:8px}
+.card-container .form-card button.submit-btn, .card-container .form-card a.frm-sbt-btn{font-size:14px; font-family: Montserrat, 'Helvetica', 'Arial', sans-serif; width:130px; color:white; background-color:#e84b3d; padding:10px 0; margin:3px auto 18px; float:right; text-align: center; display: block; border:1px solid #e84b3d; cursor:pointer; box-shadow: 0 2px 8px #b3b3b3; -webkit-box-shadow: 0 2px 8px #b3b3b3; border-radius: 5px; -webkit-border-radius: 5px; transition: 0.4s all; -webkit-transition: 0.4s all}
+a.custom-sbt-btn:hover, .card-container .form-card a.submit:hover, .card-container .form-card button.submit-btn:hover, .card-container .form-card a.frm-sbt-btn:hover{transform:translateY(-2px); -webkit-transform:translateY(-2px)}
+a.custom-sbt-btn:active, .card-container .form-card a.submit:active, .card-container .form-card button.submit-btn:active, .card-container .form-card a.frm-sbt-btn:active{transform:scale(0.98); -webkit-transform:scale(0.98)}
+.card-container .form-card button.submit-btn i.fa{margin-left:8px}
+.card-container .form-card .action-block{margin:10px 0}
+.card-container .form-card .action-block p span{font-size:14px; color:#222A35}
+.card-container .form-card .action-block a{font-size:14px; color:#e84b3d}
+.card-container .form-card .action-block a i.fa{margin-left:8px}
+.card-container .form-card .action-block a:hover{text-decoration: underline}
+.card-container .form-card a.lt-hlp-txt{font-size:12px; color:#e84b3d; position: relative}
+.card-container .form-card a.lt-hlp-txt .spinner{position: absolute; width: 15px; height:15px; margin:auto; top:0; bottom:0; right:-20px; border-width: 1px}
+.card-container .form-card a#send-reset-pass-code{width:260px}
+.card-container .form-card a#confirm-reset-pass-code{width:200px}
+.card-container .form-card.force-change-pass-card button.submit-btn{width: 170px}
+.card-container .form-card .policy{margin:30px 0 0}
+.card-container .form-card .policy p{font-size:10px; color:#222A35}
+.card-container .form-card .policy p a{font-weight: 600; text-decoration: underline}
+.card-container .form-card-overlay{position: absolute; top:0; bottom:0; left:0; right:0; margin:auto; z-index: 2}/*; background-color:rgba(0,0,0,0.3)*/
+.card-container .copyright{font-size:12px; width:500px; color:#222A35; display: block; margin:0 auto 30px; padding:0 0 0 38px}
+.card-container .form-card.fg-pass-card button.submit-btn{width:260px}
+.card-container .form-card.reset-pass-card button.submit-btn{width:200px}
+
+.code-nb-group{margin:0 0 20px}
+.code-nb-group .inputs-wrapper{width:300px; display: flex; justify-content: space-between; -webkit-justify-content: space-between; text-align: center; margin:0 auto}
+.code-nb-group input.code-number{width: 42px; height: 42px; font-family: Montserrat, 'Helvetica', 'Arial', sans-serif; font-size: 15px !important; text-align: center; margin-right: 4px; color: #222A35; border: 1px solid #d9d9d9; border-radius: 5px;}
+
+@keyframes btnClicked {
+    0% {transform: translateY(5px)}
+    100% {transform: translateY(0)}
+}
+
+@-webkit-keyframes btnClicked {
+    0% {transform: translateY(5px)}
+    100% {transform: translateY(0)}
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+}
+
+@-webkit-keyframes spin {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+}
+
+@media screen and (max-width: 700px){
+    .card-container .form-card{width:90%}
+    .card-container .card-content{padding:30px 0 0}
+    .card-container .form-card .inner-block, .card-container .copyright{width:100%; padding:0 20px}
+    .card-container .form-card h1.main-title{font-size:18px; margin-bottom:20px}
+    .card-container .form-card p.description{margin-bottom:15px}
+    .card-container .form-card button.submit-btn, form.custom-form-control .input-control input{font-size:14px}
+    .card-container .form-card .action-block a, .card-container .form-card .action-block p span, .card-container .form-card .action-block p a, .card-container .form-card a.lt-hlp-txt{font-size:11px}
+    .card-container .form-card button.submit-btn{width:120px}
+    form.custom-form-control .input-control label, .card-container .form-card form label.force-active{font-size:12px}
+    .card-container .form-card .policy{margin:21px 0 0}
+    .card-container .form-card .policy p, .card-container .copyright{font-size:10px}
+}

@@ -1,27 +1,14 @@
-<table class="table table-flush table-hover p-0 datatable-component" data-sort-col="0" data-sort-order="desc">
+<table class="table table-flush table-hover p-0 datatable-component">
     <thead class="thead-light">
     <tr>
-        <th class="th-2">Name</th>
-        <th class="th-3 desktop">Code</th>
-        <th class="th-4">Country</th>
-        <th class="th-5">Currency</th>
-        <th class="th-6 desktop">Account Details</th>
-        <th class="th-7 hidden">Date</th>
+        <th>Name</th>
+        <th>Code</th>
     </tr>
     </thead>
-        @if (isset($users))
-            @foreach($users as $user)
-                <tr>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                </tr>
-            @endforeach
-        @else
-        <tfoot>
+    <tbody>
         <tr>
-            <td colspan="6">There are no users added yet.</td>
+            <td></td>
+            <td></td>
         </tr>
-        </tfoot>
-    @endif
+    </tbody>
 </table>
